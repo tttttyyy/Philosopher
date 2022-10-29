@@ -6,7 +6,7 @@
 /*   By: tyenokya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 14:25:39 by tyenokya          #+#    #+#             */
-/*   Updated: 2022/10/29 14:56:09 by tyenokya         ###   ########.fr       */
+/*   Updated: 2022/10/29 14:57:48 by tyenokya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int					ft_eat(t_arg *ph);
 int					one(t_arg sct);
 long long			get_time(void);
 void				add_time(t_arg **ph);
-void				ft_usleep(unsigned long long i);
+void				ft_usleep(long long i);
 void				create(t_arg *ph, pthread_mutex_t *fork, int i);
 void				init(t_main *main, t_arg *sct);
 void				mutex_destroy(pthread_mutex_t *mutex, int count);
