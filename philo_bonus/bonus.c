@@ -6,7 +6,7 @@
 /*   By: tyenokya <tyenokya@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 14:21:06 by tyenokya          #+#    #+#             */
-/*   Updated: 2022/10/27 15:04:35 by tyenokya         ###   ########.fr       */
+/*   Updated: 2022/10/29 14:48:10 by tyenokya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,19 @@ int	main(int argc, char **argv)
 		return (0);
 	}
 	main = (t_main *)malloc(sizeof(t_main));
+	if (!main)
+		return (0);
 	sct.start = get_time();
 	sct.timer = sct.start;
+	int	i, id;
+	i = -1;
+	id = fork();
+	while (++i < argc && id != 0)
+	{
+		id = fork();	
+		printf("%d = %d\n", i, id);
+	}
 	//init(main, &sct);
 	//conditions(sct, main);
 	return (0);
-}
+	}
