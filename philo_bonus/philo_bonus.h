@@ -6,12 +6,12 @@
 /*   By: tyenokya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 14:25:39 by tyenokya          #+#    #+#             */
-/*   Updated: 2022/10/26 15:00:20 by tyenokya         ###   ########.fr       */
+/*   Updated: 2022/10/27 15:05:14 by tyenokya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHILO_H
-#define PHILO_H
+#ifndef PHILO_BONUS_H
+#define PHILO_BONUS_H
 
 #include <sys/time.h>
 #include <stdio.h>

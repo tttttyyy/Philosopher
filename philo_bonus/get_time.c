@@ -6,11 +6,11 @@
 /*   By: tyenokya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 15:11:56 by tyenokya          #+#    #+#             */
-/*   Updated: 2022/10/26 15:01:00 by tyenokya         ###   ########.fr       */
+/*   Updated: 2022/10/27 15:07:28 by tyenokya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philo.h"
+#include "philo_bonus.h"
 
 long long	get_time(void)
 {

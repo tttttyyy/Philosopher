@@ -1,31 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   get_time.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tyenokya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/13 16:39:39 by tyenokya          #+#    #+#             */
-/*   Updated: 2022/09/04 14:31:50 by tyenokya         ###   ########.fr       */
+/*   Created: 2022/09/20 15:11:56 by tyenokya          #+#    #+#             */
+/*   Updated: 2022/10/26 15:36:34 by tyenokya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-int	ft_putnbr(int i)
+long long	get_time(void)
 {
-	char	l;
+	struct timeval	current_time;
 
-	if (i < 0)
-	{
-		write(1, "-", 1);
-		i *= -1;
-	}
-	if (i >= 10)
-		ft_putnbr(i / 10);
-	l = '0' + (i % 10);
-	if (!write(1, &l, 1))
-		return (0);
-	else
-		return (1);
+	gettimeofday(&current_time, NULL);
+	return ((current_time.tv_sec) * 1000 + (current_time.tv_usec) / 1000);
 }
